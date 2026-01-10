@@ -1,0 +1,560 @@
+{
+  "requests": [
+    {
+      "$type": "addSlot",
+      "messageId": "add_capture_root",
+      "data": {
+        "id": "__CAPTURE_SLOT__",
+        "parent": { "$type": "reference", "targetId": "__ROOT_SLOT__" },
+        "name": { "$type": "string", "value": "CaptureCamera" },
+        "position": { "$type": "float3", "value": { "x": 0.0, "y": 1.2, "z": -2.0 } }
+      }
+    },
+    {
+      "$type": "addSlot",
+      "messageId": "add_capture_rendertex_slot",
+      "data": {
+        "id": "__RENDERTEX_SLOT__",
+        "parent": { "$type": "reference", "targetId": "__CAPTURE_SLOT__" },
+        "name": { "$type": "string", "value": "RenderTextureProvider" }
+      }
+    },
+    {
+      "$type": "addSlot",
+      "messageId": "add_capture_screen_slot",
+      "data": {
+        "id": "__SCREEN_SLOT__",
+        "parent": { "$type": "reference", "targetId": "__CAPTURE_SLOT__" },
+        "name": { "$type": "string", "value": "PreviewScreen" }
+      }
+    },
+    {
+      "$type": "addSlot",
+      "messageId": "add_capture_pf_root",
+      "data": {
+        "id": "__PROTOFLUX_SLOT__",
+        "parent": { "$type": "reference", "targetId": "__CAPTURE_SLOT__" },
+        "name": { "$type": "string", "value": "ProtoFlux" }
+      }
+    },
+    {
+      "$type": "addSlot",
+      "messageId": "add_pf_rtt_slot",
+      "data": {
+        "id": "__RTT_NODE_SLOT__",
+        "parent": { "$type": "reference", "targetId": "__PROTOFLUX_SLOT__" },
+        "name": { "$type": "string", "value": "RenderToTextureAsset" }
+      }
+    },
+    {
+      "$type": "addSlot",
+      "messageId": "add_pf_camera_ref_slot",
+      "data": {
+        "id": "__CAMERA_REF_SLOT__",
+        "parent": { "$type": "reference", "targetId": "__PROTOFLUX_SLOT__" },
+        "name": { "$type": "string", "value": "RefObjectInput<Camera>" }
+      }
+    },
+    {
+      "$type": "addSlot",
+      "messageId": "add_pf_trigger_slot",
+      "data": {
+        "id": "__TRIGGER_SLOT__",
+        "parent": { "$type": "reference", "targetId": "__PROTOFLUX_SLOT__" },
+        "name": { "$type": "string", "value": "ValueInput<bool>" }
+      }
+    },
+    {
+      "$type": "addSlot",
+      "messageId": "add_pf_fire_slot",
+      "data": {
+        "id": "__FIRE_SLOT__",
+        "parent": { "$type": "reference", "targetId": "__PROTOFLUX_SLOT__" },
+        "name": { "$type": "string", "value": "FireOnTrue" }
+      }
+    },
+    {
+      "$type": "addSlot",
+      "messageId": "add_pf_start_slot",
+      "data": {
+        "id": "__START_SLOT__",
+        "parent": { "$type": "reference", "targetId": "__PROTOFLUX_SLOT__" },
+        "name": { "$type": "string", "value": "StartAsyncTask" }
+      }
+    },
+    {
+      "$type": "addSlot",
+      "messageId": "add_pf_resolution_slot",
+      "data": {
+        "id": "__RESOLUTION_SLOT__",
+        "parent": { "$type": "reference", "targetId": "__PROTOFLUX_SLOT__" },
+        "name": { "$type": "string", "value": "ValueInput<int2>" }
+      }
+    },
+    {
+      "$type": "addSlot",
+      "messageId": "add_pf_quality_slot",
+      "data": {
+        "id": "__QUALITY_SLOT__",
+        "parent": { "$type": "reference", "targetId": "__PROTOFLUX_SLOT__" },
+        "name": { "$type": "string", "value": "ValueInput<int>" }
+      }
+    },
+    {
+      "$type": "addSlot",
+      "messageId": "add_pf_format_slot",
+      "data": {
+        "id": "__FORMAT_SLOT__",
+        "parent": { "$type": "reference", "targetId": "__PROTOFLUX_SLOT__" },
+        "name": { "$type": "string", "value": "ValueObjectInput<string>" }
+      }
+    },
+    {
+      "$type": "addSlot",
+      "messageId": "add_pf_objectwrite_slot",
+      "data": {
+        "id": "__OBJECT_WRITE_SLOT__",
+        "parent": { "$type": "reference", "targetId": "__PROTOFLUX_SLOT__" },
+        "name": { "$type": "string", "value": "ObjectWrite<Uri>" }
+      }
+    },
+    {
+      "$type": "addSlot",
+      "messageId": "add_pf_url_store_slot",
+      "data": {
+        "id": "__URL_STORE_SLOT__",
+        "parent": { "$type": "reference", "targetId": "__PROTOFLUX_SLOT__" },
+        "name": { "$type": "string", "value": "DataModelObjectFieldStore<Uri>" }
+      }
+    },
+
+    {
+      "$type": "addComponent",
+      "messageId": "add_camera",
+      "containerSlotId": "__CAPTURE_SLOT__",
+      "data": { "id": "__CAMERA_COMPONENT__", "componentType": "[FrooxEngine]FrooxEngine.Camera" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_grabbable",
+      "containerSlotId": "__CAPTURE_SLOT__",
+      "data": { "id": "__GRABBABLE_COMPONENT__", "componentType": "[FrooxEngine]FrooxEngine.Grabbable" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_boxcollider",
+      "containerSlotId": "__CAPTURE_SLOT__",
+      "data": { "id": "__BOXCOLLIDER_COMPONENT__", "componentType": "[FrooxEngine]FrooxEngine.BoxCollider" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_rendertex",
+      "containerSlotId": "__RENDERTEX_SLOT__",
+      "data": { "id": "__RENDERTEX_COMPONENT__", "componentType": "[FrooxEngine]FrooxEngine.RenderTextureProvider" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_screen_mesh",
+      "containerSlotId": "__SCREEN_SLOT__",
+      "data": { "id": "__SCREEN_MESH__", "componentType": "[FrooxEngine]FrooxEngine.QuadMesh" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_screen_renderer",
+      "containerSlotId": "__SCREEN_SLOT__",
+      "data": { "id": "__SCREEN_RENDERER__", "componentType": "[FrooxEngine]FrooxEngine.MeshRenderer" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_screen_material",
+      "containerSlotId": "__SCREEN_SLOT__",
+      "data": { "id": "__SCREEN_MATERIAL__", "componentType": "[FrooxEngine]FrooxEngine.UnlitMaterial" }
+    },
+
+    {
+      "$type": "addComponent",
+      "messageId": "add_pf_rtt",
+      "containerSlotId": "__RTT_NODE_SLOT__",
+      "data": { "id": "__RTT_NODE__", "componentType": "[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Rendering.RenderToTextureAsset" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_pf_camera_ref",
+      "containerSlotId": "__CAMERA_REF_SLOT__",
+      "data": { "id": "__CAMERA_REF_NODE__", "componentType": "[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.RefObjectInput<[FrooxEngine]FrooxEngine.Camera>" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_pf_trigger",
+      "containerSlotId": "__TRIGGER_SLOT__",
+      "data": { "id": "__TRIGGER_VALUE__", "componentType": "[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput<bool>" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_pf_fire",
+      "containerSlotId": "__FIRE_SLOT__",
+      "data": { "id": "__FIRE_ON_TRUE__", "componentType": "[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Actions.FireOnTrue" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_pf_start",
+      "containerSlotId": "__START_SLOT__",
+      "data": { "id": "__START_ASYNC__", "componentType": "[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Async.StartAsyncTask" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_pf_resolution",
+      "containerSlotId": "__RESOLUTION_SLOT__",
+      "data": { "id": "__RESOLUTION_VALUE__", "componentType": "[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput<int2>" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_pf_quality",
+      "containerSlotId": "__QUALITY_SLOT__",
+      "data": { "id": "__QUALITY_VALUE__", "componentType": "[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput<int>" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_pf_format",
+      "containerSlotId": "__FORMAT_SLOT__",
+      "data": { "id": "__FORMAT_VALUE__", "componentType": "[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueObjectInput<string>" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_pf_objectwrite",
+      "containerSlotId": "__OBJECT_WRITE_SLOT__",
+      "data": { "id": "__OBJECT_WRITE__", "componentType": "[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ObjectWrite<[FrooxEngine]FrooxEngine.ProtoFlux.FrooxEngineContext,Uri>" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_pf_url_store",
+      "containerSlotId": "__URL_STORE_SLOT__",
+      "data": { "id": "__URL_STORE_NODE__", "componentType": "[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelObjectFieldStore<Uri>" }
+    },
+    {
+      "$type": "addComponent",
+      "messageId": "add_pf_url_store_component",
+      "containerSlotId": "__URL_STORE_SLOT__",
+      "data": { "id": "__URL_STORE_COMPONENT__", "componentType": "[ProtoFlux.Nodes.FrooxEngine]ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelObjectFieldStore<Uri>+Store" }
+    },
+
+    {
+      "$type": "updateComponent",
+      "messageId": "wire_camera_rendertex",
+      "data": {
+        "id": "__CAMERA_COMPONENT__",
+        "members": {
+          "RenderTexture": {
+            "$type": "reference",
+            "targetId": "__RENDERTEX_COMPONENT__",
+            "targetType": "FrooxEngine.IAssetProvider<FrooxEngine.RenderTexture>"
+          }
+        }
+      }
+    },
+    {
+      "$type": "updateComponent",
+      "messageId": "set_rendertex_size",
+      "data": {
+        "id": "__RENDERTEX_COMPONENT__",
+        "members": {
+          "Size": { "$type": "int2", "value": { "x": 512, "y": 512 } },
+          "Depth": { "$type": "int", "value": 24 }
+        }
+      }
+    },
+    {
+      "$type": "updateComponent",
+      "messageId": "set_boxcollider_size",
+      "data": {
+        "id": "__BOXCOLLIDER_COMPONENT__",
+        "members": {
+          "Size": { "$type": "float3", "value": { "x": 1.0, "y": 1.0, "z": 0.0 } }
+        }
+      }
+    },
+    {
+      "$type": "updateComponent",
+      "messageId": "wire_screen_mesh",
+      "data": {
+        "id": "__SCREEN_RENDERER__",
+        "members": {
+          "Mesh": {
+            "$type": "reference",
+            "targetId": "__SCREEN_MESH__",
+            "targetType": "FrooxEngine.IAssetProvider<FrooxEngine.Mesh>"
+          },
+          "Materials": {
+            "$type": "list",
+            "id": "__SCREEN_MATERIALS_LIST__",
+            "elements": [
+              {
+                "$type": "reference",
+                "id": "__SCREEN_MATERIALS_ENTRY__",
+                "targetId": "__SCREEN_MATERIAL__",
+                "targetType": "FrooxEngine.IAssetProvider<FrooxEngine.Material>"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "$type": "updateComponent",
+      "messageId": "wire_screen_material",
+      "data": {
+        "id": "__SCREEN_MATERIAL__",
+        "members": {
+          "Texture": {
+            "$type": "reference",
+            "targetId": "__RENDERTEX_COMPONENT__",
+            "targetType": "FrooxEngine.IAssetProvider<FrooxEngine.ITexture2D>"
+          }
+        }
+      }
+    },
+    {
+      "$type": "updateComponent",
+      "messageId": "wire_camera_ref",
+      "data": {
+        "id": "__CAMERA_REF_NODE__",
+        "members": {
+          "Target": {
+            "$type": "reference",
+            "targetId": "__CAMERA_COMPONENT__",
+            "targetType": "FrooxEngine.Camera"
+          }
+        }
+      }
+    },
+    {
+      "$type": "updateComponent",
+      "messageId": "wire_pf_rtt",
+      "data": {
+        "id": "__RTT_NODE__",
+        "members": {
+          "Camera": {
+            "$type": "reference",
+            "targetId": "__CAMERA_REF_NODE__",
+            "targetType": "FrooxEngine.ProtoFlux.INodeObjectOutput<FrooxEngine.Camera>"
+          },
+          "Resolution": {
+            "$type": "reference",
+            "targetId": "__RESOLUTION_VALUE__",
+            "targetType": "FrooxEngine.ProtoFlux.INodeValueOutput<int2>"
+          },
+          "Quality": {
+            "$type": "reference",
+            "targetId": "__QUALITY_VALUE__",
+            "targetType": "FrooxEngine.ProtoFlux.INodeValueOutput<int>"
+          },
+          "Format": {
+            "$type": "reference",
+            "targetId": "__FORMAT_VALUE__",
+            "targetType": "FrooxEngine.ProtoFlux.INodeObjectOutput<string>"
+          },
+          "OnRendered": {
+            "$type": "reference",
+            "targetId": "__OBJECT_WRITE__",
+            "targetType": "FrooxEngine.ProtoFlux.INodeOperation"
+          }
+        }
+      }
+    },
+    {
+      "$type": "updateComponent",
+      "messageId": "wire_pf_trigger",
+      "data": {
+        "id": "__FIRE_ON_TRUE__",
+        "members": {
+          "Condition": {
+            "$type": "reference",
+            "targetId": "__TRIGGER_VALUE__",
+            "targetType": "FrooxEngine.ProtoFlux.INodeValueOutput<bool>"
+          },
+          "OnChanged": {
+            "$type": "reference",
+            "targetId": "__START_ASYNC__",
+            "targetType": "FrooxEngine.ProtoFlux.ISyncNodeOperation"
+          }
+        }
+      }
+    },
+    {
+      "$type": "updateComponent",
+      "messageId": "wire_pf_start",
+      "data": {
+        "id": "__START_ASYNC__",
+        "members": {
+          "TaskStart": {
+            "$type": "reference",
+            "targetId": "__RTT_NODE__",
+            "targetType": "FrooxEngine.ProtoFlux.INodeOperation"
+          }
+        }
+      }
+    },
+    {
+      "$type": "updateComponent",
+      "messageId": "wire_pf_objectwrite",
+      "data": {
+        "id": "__OBJECT_WRITE__",
+        "members": {
+          "Variable": {
+            "$type": "reference",
+            "targetId": "__URL_STORE_NODE__",
+            "targetType": "FrooxEngine.ProtoFlux.Runtimes.Execution.IVariable<FrooxEngine.ProtoFlux.FrooxEngineContext,Uri>"
+          }
+        }
+      }
+    },
+    {
+      "$type": "updateComponent",
+      "messageId": "wire_pf_objectwrite_value",
+      "data": {
+        "id": "__OBJECT_WRITE__",
+        "members": {
+          "Value": {
+            "$type": "reference",
+            "targetId": "__RTT_RENDERED_URL_FIELD__",
+            "targetType": "FrooxEngine.ProtoFlux.INodeObjectOutput<Uri>"
+          }
+        }
+      }
+    },
+    {
+      "$type": "updateComponent",
+      "messageId": "wire_pf_url_store_component",
+      "data": {
+        "id": "__URL_STORE_COMPONENT__",
+        "members": {
+          "Node": {
+            "$type": "reference",
+            "targetId": "__URL_STORE_NODE__",
+            "targetType": "FrooxEngine.ProtoFlux.IProtoFluxNode"
+          }
+        }
+      }
+    },
+    {
+      "$type": "updateComponent",
+      "messageId": "set_pf_values",
+      "data": {
+        "id": "__RESOLUTION_VALUE__",
+        "members": {
+          "Value": { "$type": "int2", "value": { "x": 512, "y": 512 } }
+        }
+      }
+    },
+    {
+      "$type": "updateComponent",
+      "messageId": "set_pf_quality",
+      "data": {
+        "id": "__QUALITY_VALUE__",
+        "members": {
+          "Value": { "$type": "int", "value": 90 }
+        }
+      }
+    },
+    {
+      "$type": "updateComponent",
+      "messageId": "set_pf_format",
+      "data": {
+        "id": "__FORMAT_VALUE__",
+        "members": {
+          "Value": { "$type": "string", "value": "PNG" }
+        }
+      }
+    },
+    {
+      "$type": "updateComponent",
+      "messageId": "set_pf_trigger_default",
+      "data": {
+        "id": "__TRIGGER_VALUE__",
+        "members": {
+          "Value": { "$type": "bool", "value": false }
+        }
+      }
+    },
+    {
+      "$type": "updateSlot",
+      "messageId": "pos_pf_camera_ref",
+      "data": {
+        "id": "__CAMERA_REF_SLOT__",
+        "position": { "$type": "float3", "value": { "x": -0.3, "y": 0.0, "z": 0.0 } }
+      }
+    },
+    {
+      "$type": "updateSlot",
+      "messageId": "pos_pf_trigger",
+      "data": {
+        "id": "__TRIGGER_SLOT__",
+        "position": { "$type": "float3", "value": { "x": -0.15, "y": 0.0, "z": 0.0 } }
+      }
+    },
+    {
+      "$type": "updateSlot",
+      "messageId": "pos_pf_fire",
+      "data": {
+        "id": "__FIRE_SLOT__",
+        "position": { "$type": "float3", "value": { "x": 0.0, "y": 0.0, "z": 0.0 } }
+      }
+    },
+    {
+      "$type": "updateSlot",
+      "messageId": "pos_pf_start",
+      "data": {
+        "id": "__START_SLOT__",
+        "position": { "$type": "float3", "value": { "x": 0.15, "y": 0.0, "z": 0.0 } }
+      }
+    },
+    {
+      "$type": "updateSlot",
+      "messageId": "pos_pf_rtt",
+      "data": {
+        "id": "__RTT_NODE_SLOT__",
+        "position": { "$type": "float3", "value": { "x": 0.3, "y": 0.0, "z": 0.0 } }
+      }
+    },
+    {
+      "$type": "updateSlot",
+      "messageId": "pos_pf_objectwrite",
+      "data": {
+        "id": "__OBJECT_WRITE_SLOT__",
+        "position": { "$type": "float3", "value": { "x": 0.45, "y": 0.0, "z": 0.0 } }
+      }
+    },
+    {
+      "$type": "updateSlot",
+      "messageId": "pos_pf_url_store",
+      "data": {
+        "id": "__URL_STORE_SLOT__",
+        "position": { "$type": "float3", "value": { "x": 0.6, "y": 0.0, "z": 0.0 } }
+      }
+    },
+    {
+      "$type": "updateSlot",
+      "messageId": "pos_pf_resolution",
+      "data": {
+        "id": "__RESOLUTION_SLOT__",
+        "position": { "$type": "float3", "value": { "x": 0.25, "y": 0.1, "z": 0.0 } }
+      }
+    },
+    {
+      "$type": "updateSlot",
+      "messageId": "pos_pf_quality",
+      "data": {
+        "id": "__QUALITY_SLOT__",
+        "position": { "$type": "float3", "value": { "x": 0.35, "y": 0.1, "z": 0.0 } }
+      }
+    },
+    {
+      "$type": "updateSlot",
+      "messageId": "pos_pf_format",
+      "data": {
+        "id": "__FORMAT_SLOT__",
+        "position": { "$type": "float3", "value": { "x": 0.45, "y": 0.1, "z": 0.0 } }
+      }
+    }
+  ]
+}

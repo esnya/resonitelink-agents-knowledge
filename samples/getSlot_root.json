@@ -1,0 +1,7 @@
+{
+  "$type": "getSlot",
+  "messageId": "example_getSlot_root_1",
+  "slotId": "Root",
+  "includeComponentData": false,
+  "depth": 0
+}

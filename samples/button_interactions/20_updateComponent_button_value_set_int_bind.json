@@ -1,0 +1,18 @@
+{
+  "$type": "updateComponent",
+  "messageId": "sample_update_button_value_set_int",
+  "data": {
+    "id": "KokoaButtonLab_ButtonValueSet_Int",
+    "members": {
+      "TargetValue": {
+        "$type": "reference",
+        "targetId": "FIELD_ID_INT",
+        "targetType": "FrooxEngine.IField<int>"
+      },
+      "SetValue": {
+        "$type": "int",
+        "value": 7
+      }
+    }
+  }
+}

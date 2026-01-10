@@ -1,0 +1,9 @@
+{
+  "$type": "addComponent",
+  "messageId": "sample_add_button_value_action_float",
+  "containerSlotId": "KokoaUixButton_0_Button",
+  "data": {
+    "id": "KokoaButtonLab_ButtonValueAction_Float",
+    "componentType": "[FrooxEngine]FrooxEngine.ButtonValueActionTrigger<float>"
+  }
+}

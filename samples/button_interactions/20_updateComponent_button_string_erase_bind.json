@@ -1,0 +1,22 @@
+{
+  "$type": "updateComponent",
+  "messageId": "sample_update_button_string_erase",
+  "data": {
+    "id": "KokoaButtonLab_ButtonStringErase",
+    "members": {
+      "TargetString": {
+        "$type": "reference",
+        "targetId": "FIELD_ID_STRING",
+        "targetType": "FrooxEngine.IField<string>"
+      },
+      "Count": {
+        "$type": "int",
+        "value": 1
+      },
+      "EraseFromBeginning": {
+        "$type": "bool",
+        "value": false
+      }
+    }
+  }
+}

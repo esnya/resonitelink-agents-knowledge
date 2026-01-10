@@ -1,0 +1,8 @@
+{
+  "$type": "getSlot",
+  "messageId": "kokoa_userroot_1_getPose",
+  "slotId": "__USER_ROOT_SLOT_ID__",
+  "includeComponentData": false,
+  "depth": 0
+}
+

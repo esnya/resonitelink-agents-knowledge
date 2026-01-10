@@ -1,0 +1,20 @@
+{
+  "$type": "addComponent",
+  "messageId": "kokoa_userroot_4_addTextRenderer",
+  "containerSlotId": "KokoaTmpTxt_0",
+  "data": {
+    "id": "KokoaTmpTxt_0_TR",
+    "componentType": "[FrooxEngine]FrooxEngine.TextRenderer",
+    "members": {
+      "Text": {
+        "$type": "string",
+        "value": "Hello"
+      },
+      "Size": {
+        "$type": "float",
+        "value": 0.08
+      }
+    }
+  }
+}
+

@@ -1,0 +1,15 @@
+{
+  "$type": "addComponent",
+  "messageId": "example_addComponent_grabbable_1",
+  "containerSlotId": "KokoaTest_Slot_0",
+  "data": {
+    "id": "KokoaTest_Component_0",
+    "componentType": "[FrooxEngine]FrooxEngine.Grabbable",
+    "members": {
+      "Scalable": {
+        "$type": "bool",
+        "value": true
+      }
+    }
+  }
+}

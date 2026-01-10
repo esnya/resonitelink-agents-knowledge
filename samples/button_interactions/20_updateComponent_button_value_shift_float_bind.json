@@ -1,0 +1,34 @@
+{
+  "$type": "updateComponent",
+  "messageId": "sample_update_button_value_shift_float",
+  "data": {
+    "id": "KokoaButtonLab_ButtonValueShift_Float",
+    "members": {
+      "TargetValue": {
+        "$type": "reference",
+        "targetId": "FIELD_ID_FLOAT",
+        "targetType": "FrooxEngine.IField<float>"
+      },
+      "Delta": {
+        "$type": "float",
+        "value": 0.1
+      },
+      "Min": {
+        "$type": "float",
+        "value": 0.0
+      },
+      "Max": {
+        "$type": "float",
+        "value": 1.0
+      },
+      "WrapAround": {
+        "$type": "bool",
+        "value": true
+      },
+      "MaxIsExclusive": {
+        "$type": "bool",
+        "value": false
+      }
+    }
+  }
+}

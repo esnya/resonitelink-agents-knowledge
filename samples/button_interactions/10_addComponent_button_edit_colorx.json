@@ -1,0 +1,9 @@
+{
+  "$type": "addComponent",
+  "messageId": "sample_add_button_edit_colorx",
+  "containerSlotId": "KokoaUixButton_0_Button",
+  "data": {
+    "id": "KokoaButtonLab_ButtonEditColor",
+    "componentType": "[FrooxEngine]FrooxEngine.ButtonEditColorX"
+  }
+}

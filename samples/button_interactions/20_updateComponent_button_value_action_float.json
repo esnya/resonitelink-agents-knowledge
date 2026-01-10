@@ -1,0 +1,13 @@
+{
+  "$type": "updateComponent",
+  "messageId": "sample_update_button_value_action_float",
+  "data": {
+    "id": "KokoaButtonLab_ButtonValueAction_Float",
+    "members": {
+      "Value": {
+        "$type": "float",
+        "value": 0.5
+      }
+    }
+  }
+}

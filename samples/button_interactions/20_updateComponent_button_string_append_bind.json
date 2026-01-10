@@ -1,0 +1,22 @@
+{
+  "$type": "updateComponent",
+  "messageId": "sample_update_button_string_append",
+  "data": {
+    "id": "KokoaButtonLab_ButtonStringAppend",
+    "members": {
+      "TargetString": {
+        "$type": "reference",
+        "targetId": "FIELD_ID_STRING",
+        "targetType": "FrooxEngine.IField<string>"
+      },
+      "AppendString": {
+        "$type": "string",
+        "value": "++"
+      },
+      "AppendInFront": {
+        "$type": "bool",
+        "value": false
+      }
+    }
+  }
+}

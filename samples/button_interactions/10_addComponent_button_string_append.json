@@ -1,0 +1,9 @@
+{
+  "$type": "addComponent",
+  "messageId": "sample_add_button_string_append",
+  "containerSlotId": "KokoaUixButton_0_Button",
+  "data": {
+    "id": "KokoaButtonLab_ButtonStringAppend",
+    "componentType": "[FrooxEngine]FrooxEngine.ButtonStringAppend"
+  }
+}

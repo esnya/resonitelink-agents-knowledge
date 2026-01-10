@@ -1,0 +1,9 @@
+{
+  "$type": "addComponent",
+  "messageId": "sample_add_button_value_set_int",
+  "containerSlotId": "KokoaUixButton_0_Button",
+  "data": {
+    "id": "KokoaButtonLab_ButtonValueSet_Int",
+    "componentType": "[FrooxEngine]FrooxEngine.ButtonValueSet<int>"
+  }
+}

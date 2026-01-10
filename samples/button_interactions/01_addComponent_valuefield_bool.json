@@ -1,0 +1,9 @@
+{
+  "$type": "addComponent",
+  "messageId": "sample_add_valuefield_bool",
+  "containerSlotId": "KokoaButtonLab_Targets",
+  "data": {
+    "id": "KokoaButtonLab_ValueBool",
+    "componentType": "[FrooxEngine]FrooxEngine.ValueField<bool>"
+  }
+}

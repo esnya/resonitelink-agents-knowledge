@@ -1,0 +1,13 @@
+{
+  "$type": "updateComponent",
+  "messageId": "example_updateComponent_scalable_false_1",
+  "data": {
+    "id": "KokoaTest_Component_0",
+    "members": {
+      "Scalable": {
+        "$type": "bool",
+        "value": false
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$type": "updateComponent",
+  "messageId": "sample_update_button_clipboard_copy",
+  "data": {
+    "id": "KokoaButtonLab_ButtonClipboardCopy",
+    "members": {
+      "Source": {
+        "$type": "reference",
+        "targetId": "FIELD_ID_STRING",
+        "targetType": "FrooxEngine.IField<string>"
+      }
+    }
+  }
+}

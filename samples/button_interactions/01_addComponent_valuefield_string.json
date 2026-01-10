@@ -1,0 +1,9 @@
+{
+  "$type": "addComponent",
+  "messageId": "sample_add_valuefield_string",
+  "containerSlotId": "KokoaButtonLab_Targets",
+  "data": {
+    "id": "KokoaButtonLab_ValueString",
+    "componentType": "[FrooxEngine]FrooxEngine.ValueField<string>"
+  }
+}

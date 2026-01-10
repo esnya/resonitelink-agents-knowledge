@@ -1,0 +1,14 @@
+{
+  "$type": "updateComponent",
+  "messageId": "sample_update_button_press_relay",
+  "data": {
+    "id": "KokoaButtonLab_ButtonPressRelay",
+    "members": {
+      "Target": {
+        "$type": "reference",
+        "targetId": "TARGET_SLOT_ID",
+        "targetType": "FrooxEngine.Slot"
+      }
+    }
+  }
+}

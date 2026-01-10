@@ -1,0 +1,9 @@
+{
+  "$type": "addComponent",
+  "messageId": "sample_add_button_parent_under_user",
+  "containerSlotId": "KokoaUixButton_0_Button",
+  "data": {
+    "id": "KokoaButtonLab_ButtonParentUnderUser",
+    "componentType": "[FrooxEngine]FrooxEngine.ButtonParentUnderUser"
+  }
+}

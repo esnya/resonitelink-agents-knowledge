@@ -1,0 +1,9 @@
+{
+  "$type": "addComponent",
+  "messageId": "sample_add_button_hover_relay",
+  "containerSlotId": "KokoaUixButton_0_Button",
+  "data": {
+    "id": "KokoaButtonLab_ButtonHoverRelay",
+    "componentType": "[FrooxEngine]FrooxEngine.ButtonHoverEventRelay"
+  }
+}

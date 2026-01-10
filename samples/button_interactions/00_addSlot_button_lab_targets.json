@@ -1,0 +1,23 @@
+{
+  "$type": "addSlot",
+  "messageId": "sample_add_button_lab_targets",
+  "data": {
+    "id": "KokoaButtonLab_Targets",
+    "parent": {
+      "$type": "reference",
+      "targetId": "Root"
+    },
+    "name": {
+      "$type": "string",
+      "value": "KokoaButtonLab_Targets"
+    },
+    "position": {
+      "$type": "float3",
+      "value": {
+        "x": 1.4,
+        "y": 0.9,
+        "z": 2.6
+      }
+    }
+  }
+}

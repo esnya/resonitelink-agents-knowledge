@@ -1,0 +1,5 @@
+{
+  "$type": "removeSlot",
+  "messageId": "example_removeSlot_1",
+  "slotId": "KokoaTest_Slot_0"
+}

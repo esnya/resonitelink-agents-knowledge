@@ -1,0 +1,26 @@
+{
+  "$type": "updateComponent",
+  "messageId": "sample_update_button_dynamic_impulse",
+  "data": {
+    "id": "KokoaButtonLab_ButtonDynamicImpulse",
+    "members": {
+      "Target": {
+        "$type": "reference",
+        "targetId": "TARGET_SLOT_ID",
+        "targetType": "FrooxEngine.Slot"
+      },
+      "ExcludeDisabled": {
+        "$type": "bool",
+        "value": true
+      },
+      "PressedTag": {
+        "$type": "string",
+        "value": "pressed"
+      },
+      "ReleasedTag": {
+        "$type": "string",
+        "value": "released"
+      }
+    }
+  }
+}

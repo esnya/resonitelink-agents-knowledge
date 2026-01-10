@@ -1,0 +1,26 @@
+{
+  "$type": "updateComponent",
+  "messageId": "sample_update_button_parent_under_user",
+  "data": {
+    "id": "KokoaButtonLab_ButtonParentUnderUser",
+    "members": {
+      "Root": {
+        "$type": "reference",
+        "targetId": "TARGET_SLOT_ID",
+        "targetType": "FrooxEngine.Slot"
+      },
+      "FindObjectRoot": {
+        "$type": "bool",
+        "value": true
+      },
+      "PreserveOriginalSpace": {
+        "$type": "bool",
+        "value": true
+      },
+      "UnparentWhenParented": {
+        "$type": "bool",
+        "value": false
+      }
+    }
+  }
+}

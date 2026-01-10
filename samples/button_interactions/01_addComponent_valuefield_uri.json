@@ -1,0 +1,9 @@
+{
+  "$type": "addComponent",
+  "messageId": "sample_add_valuefield_uri",
+  "containerSlotId": "KokoaButtonLab_Targets",
+  "data": {
+    "id": "KokoaButtonLab_ValueUri",
+    "componentType": "[FrooxEngine]FrooxEngine.ValueField<Uri>"
+  }
+}

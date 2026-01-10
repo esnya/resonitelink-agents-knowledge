@@ -1,0 +1,14 @@
+{
+  "$type": "updateComponent",
+  "messageId": "sample_update_button_toggle_bind",
+  "data": {
+    "id": "KokoaButtonLab_ButtonToggle",
+    "members": {
+      "TargetValue": {
+        "$type": "reference",
+        "targetId": "FIELD_ID_BOOL",
+        "targetType": "FrooxEngine.IField<bool>"
+      }
+    }
+  }
+}

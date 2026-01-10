@@ -1,0 +1,14 @@
+{
+  "$type": "updateComponent",
+  "messageId": "sample_update_button_world_link",
+  "data": {
+    "id": "KokoaButtonLab_ButtonWorldLink",
+    "members": {
+      "WorldLink": {
+        "$type": "reference",
+        "targetId": "WORLDLINK_COMPONENT_ID",
+        "targetType": "FrooxEngine.WorldLink"
+      }
+    }
+  }
+}

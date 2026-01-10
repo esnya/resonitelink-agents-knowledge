@@ -1,0 +1,9 @@
+{
+  "$type": "addComponent",
+  "messageId": "sample_add_valuefield_colorx",
+  "containerSlotId": "KokoaButtonLab_Targets",
+  "data": {
+    "id": "KokoaButtonLab_ValueColor",
+    "componentType": "[FrooxEngine]FrooxEngine.ValueField<colorX>"
+  }
+}

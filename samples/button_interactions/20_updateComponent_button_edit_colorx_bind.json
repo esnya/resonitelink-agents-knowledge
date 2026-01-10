@@ -1,0 +1,26 @@
+{
+  "$type": "updateComponent",
+  "messageId": "sample_update_button_edit_colorx",
+  "data": {
+    "id": "KokoaButtonLab_ButtonEditColor",
+    "members": {
+      "Target": {
+        "$type": "reference",
+        "targetId": "FIELD_ID_COLORX",
+        "targetType": "FrooxEngine.IField<colorX>"
+      },
+      "Continuous": {
+        "$type": "bool",
+        "value": true
+      },
+      "Alpha": {
+        "$type": "bool",
+        "value": true
+      },
+      "HDR": {
+        "$type": "bool",
+        "value": true
+      }
+    }
+  }
+}

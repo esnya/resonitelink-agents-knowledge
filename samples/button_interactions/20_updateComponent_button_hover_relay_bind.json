@@ -1,0 +1,14 @@
+{
+  "$type": "updateComponent",
+  "messageId": "sample_update_button_hover_relay",
+  "data": {
+    "id": "KokoaButtonLab_ButtonHoverRelay",
+    "members": {
+      "Target": {
+        "$type": "reference",
+        "targetId": "TARGET_SLOT_ID",
+        "targetType": "FrooxEngine.Slot"
+      }
+    }
+  }
+}

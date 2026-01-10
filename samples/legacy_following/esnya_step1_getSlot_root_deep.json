@@ -1,0 +1,8 @@
+{
+  "$type": "getSlot",
+  "messageId": "kokoa_esnya_1_getRoot",
+  "slotId": "Root",
+  "includeComponentData": false,
+  "depth": -1
+}
+

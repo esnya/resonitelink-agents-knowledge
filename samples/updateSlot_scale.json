@@ -1,0 +1,15 @@
+{
+  "$type": "updateSlot",
+  "messageId": "example_updateSlot_scale_1",
+  "data": {
+    "id": "KokoaTest_Slot_0",
+    "scale": {
+      "$type": "float3",
+      "value": {
+        "x": 2.5,
+        "y": 2.5,
+        "z": 2.5
+      }
+    }
+  }
+}

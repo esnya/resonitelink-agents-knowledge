@@ -1,0 +1,5 @@
+{
+  "$type": "removeComponent",
+  "messageId": "example_removeComponent_1",
+  "componentId": "KokoaTest_Component_0"
+}

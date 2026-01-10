@@ -1,0 +1,23 @@
+{
+  "$type": "addSlot",
+  "messageId": "example_addSlot_hello_1",
+  "data": {
+    "id": "KokoaTest_Slot_0",
+    "parent": {
+      "$type": "reference",
+      "targetId": "Root"
+    },
+    "name": {
+      "$type": "string",
+      "value": "Hello from ResoniteLink (raw JSON)"
+    },
+    "position": {
+      "$type": "float3",
+      "value": {
+        "x": 0.0,
+        "y": 1.5,
+        "z": 10.0
+      }
+    }
+  }
+}

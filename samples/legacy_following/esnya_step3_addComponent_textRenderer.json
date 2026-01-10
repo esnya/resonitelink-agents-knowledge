@@ -1,0 +1,20 @@
+{
+  "$type": "addComponent",
+  "messageId": "kokoa_esnya_3_addTextRenderer",
+  "containerSlotId": "KokoaEsnyaTxt_0",
+  "data": {
+    "id": "KokoaEsnyaTxt_0_TR",
+    "componentType": "[FrooxEngine]FrooxEngine.TextRenderer",
+    "members": {
+      "Text": {
+        "$type": "string",
+        "value": "Hello esnya"
+      },
+      "Size": {
+        "$type": "float",
+        "value": 0.08
+      }
+    }
+  }
+}
+

@@ -163,3 +163,28 @@ Note: these URLs are **observed** and may change if they are not backed by `Offi
 - Texture sheets for smoke: smoke trail and puff are separate systems with sheet animation and large size ranges.
 - Shared forces: common turbulence and gravity live in a shared modules slot and are reused.
 - UI-driven tuning: a small UI field drives the emitter rate for interactive adjustments.
+
+## Module cheat sheet (purpose → key params)
+
+| Module | Purpose | Key params (sample) |
+| --- | --- | --- |
+| `UniformSizeRangeInitializer` | initial size range | `MinValue`, `MaxValue` |
+| `LifetimeRangeInitializer` | particle lifetime | `MinValue`, `MaxValue` |
+| `SpeedRangeInitializer` | launch speed | `MinValue`, `MaxValue` |
+| `UniformSizeOverLifetimeStartEnd` | size fade | `StartSize`, `EndSize` |
+| `ParticleTrailsModule` | streaks | `TrailsRatio`, `MinVertexDistance`, `MaxTrails` |
+| `ParticleDeathSubEmitter` | burst chain | `EmitMin/Max`, `TargetSystem` |
+| `ParticleLifetimeSubEmitter` | sprinkle chain | `Rate`, `TargetSystem` |
+| `ParticleLightsModule` | light followers | `TemplateLight`, `LightsRatio`, `MaxLights` |
+| `TextureSheetAnimator` | animated smoke | `TileGridSize`, `AnimationType` |
+| `SimplexTurbulentForce` | noise drift | `Strength`, `Scale`, `NoiseOffset` |
+
+## Build recipe (clone the pattern)
+
+1. Create a base `ParticleSystem` + `ParticleStyle` + `BillboardParticleRenderer` and wire size/lifetime/speed initializers.
+2. Add `ParticleTrailsModule` and `ParticleLightsModule` (small range for base, large range for explosion).
+3. Add death sub-emitters for secondary + explosion, and a lifetime sub-emitter for sparkle.
+4. Build secondary/sparkle systems with shorter lifetimes and negative speed (fading sparks).
+5. Add smoke trail + puff systems with `TextureSheetAnimator` and large size ranges.
+6. Put shared forces (turbulence + gravity) into a reusable `Shared Modules` slot.
+7. Add a `PointEmitter` driving the base system; wire its `Rate` to a UI float field for tuning.

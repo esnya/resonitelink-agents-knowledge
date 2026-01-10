@@ -8,6 +8,10 @@
 
 - Rendering preferences: `notes/resonite/rendering/preferences.md`
 
+## Effects
+
+- Effects index: `notes/resonite/effects/INDEX.md`
+
 ## Components
 
 - Button interactions: `notes/resonite/components/button-interactions.md`

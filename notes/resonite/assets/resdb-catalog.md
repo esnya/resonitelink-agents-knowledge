@@ -8,6 +8,8 @@ For the full official name → URL mapping extracted from FrooxEngine, see:
 
 - `notes/resonite/assets/official-assets.tsv`
 
+Note: URLs that are not backed by `OfficialAssets` can change over time. Treat them as observed values rather than stable identifiers.
+
 ## Panel textures (9-slice)
 
 ### Panel background texture
@@ -35,6 +37,36 @@ For the full official name → URL mapping extracted from FrooxEngine, see:
 - Seen in: TextField / FloatField / IntField / SlotField input backgrounds.
 - `SpriteProvider` (observed): `Borders: (0.5,0.5,0.5,0.5)`, `FixedSize: 16`, `Scale: 1`.
 - `UIX.Image` (typical): `PreserveAspect: true`, `NineSliceSizing: FixedSize`, tint ~ `(0.1686, 0.1843, 0.2078, 1 sRGB)`.
+
+## Particle textures (Fireworks Preset)
+
+These textures come from the official `Fireworks Preset` PhotonDust sample.
+
+### Firework particle base sprite
+
+- URL: `resdb:///657941e0c33499fc50049888c6d1153f06bd1ba9a5375d086edf1fa864b5f8e6`
+- Used in: Base/Secondary/Sparkly particle materials (`UnlitMaterial`, additive).
+- `UnlitMaterial` (observed):
+  - `BlendMode: Additive`, `UseVertexColors: true`.
+  - `TintColor` higher intensity (`6,6,6,1 Linear`) for base particles.
+
+### Firework trail texture
+
+- URL: `resdb:///e69ca01a2d0bb0f5d48475a64f0aeabbd2a1b72ad3d7a051c1ee0b19f7b0b422.exr`
+- Used in: All trail materials (`UnlitMaterial`, additive).
+- `UnlitMaterial` (observed):
+  - `BlendMode: Additive`, `UseVertexColors: true`.
+  - `TintColor` lower intensity (`2,2,2,1 Linear`) for trails.
+
+### Explosion particle sprite
+
+- URL: `resdb:///e189c153f8435293737c711ed0585fa471b1704011d9fc452b2e2caec551b4cf.png`
+- Used in: Explosion particles (`UnlitMaterial`, additive).
+
+### Smoke sheet texture
+
+- URL: `resdb:///7415672b4ef76ac44a9ded20d03b64fca4a1a13700325a9f1023e14dbfa7657f.png`
+- Used in: Smoke material (`PBS_Metallic` with `BlendMode: Alpha`, `AlbedoColor.a: 0.125`).
 
 ## Fonts
 

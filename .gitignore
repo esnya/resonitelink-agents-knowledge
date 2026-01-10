@@ -1,0 +1,8 @@
+# Ignored workspace-only artifacts
+ignored/
+
+# Build artifacts
+/tools/froox-introspect/obj/
+
+# Local state files
+/tools/resolink-console/state.json

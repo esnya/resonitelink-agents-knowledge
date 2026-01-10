@@ -33,3 +33,8 @@ This repository stores a structured knowledge base for ResoniteLink and Resonite
 ## Naming
 - Use kebab-case filenames (e.g., `render-to-texture.md`).
 - Keep file names descriptive and scoped to their category.
+
+## Ignored workspace directory
+- Use `ignored/` for temporary clones and scratch data that should not be tracked.
+- Do not reference files inside `ignored/` from the knowledge indices.
+- Keep `ignored/` out of commits; update `.gitignore` if new subfolders are added.

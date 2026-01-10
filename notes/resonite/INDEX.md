@@ -24,6 +24,10 @@
 
 - Tutorials index: `notes/resonite/tutorials/INDEX.md`
 
+## Examples
+
+- Examples index: `notes/resonite/examples/INDEX.md`
+
 ## UIX
 
 - UIX index: `notes/resonite/uix/INDEX.md`

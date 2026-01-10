@@ -46,3 +46,8 @@ Slot names are recorded only for navigation; the reusable patterns are in compon
 - `ReferenceEqualityDriver<Slot>` compares the reference to the sphere slot.
 - `BooleanValueDriver<float>` -> `SmoothValue<float>` -> `ValueGradientDriver<colorX>`
   animates `PBS_Metallic.EmissiveColor` between black and purple.
+
+## Related patterns
+
+- Dynamic variable wiring: `notes/resonite/patterns/dynamic-variables.md`
+- Eye ray visualization: `notes/resonite/patterns/eye-ray-visualization.md`

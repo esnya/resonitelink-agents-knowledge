@@ -37,3 +37,7 @@ Slot names are recorded only for navigation; the reusable patterns are in compon
 
 - Pair `SnapTarget` and `Snapper` using explicit whitelists for predictable snapping.
 - Keep collider sizes aligned via `ValueCopy<float3>` when using box meshes.
+
+## Related patterns
+
+- Snapping pair: `notes/resonite/patterns/snapping-pair.md`

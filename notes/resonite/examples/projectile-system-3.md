@@ -76,3 +76,8 @@ the `ProjectileSys3/` prefix. Key groups:
   enabling multiple projectile systems in one world.
 - The orientation gizmo matches the standard arrow + outline pattern used by
   other samples and can be reused for aiming tools.
+
+## Related patterns
+
+- Dynamic variable wiring: `notes/resonite/patterns/dynamic-variables.md`
+- Orientation gizmo: `notes/resonite/patterns/orientation-gizmo.md`

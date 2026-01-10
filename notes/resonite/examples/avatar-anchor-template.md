@@ -68,3 +68,7 @@ Slot names are recorded only for navigation; the reusable patterns are in compon
   with UI toggles for advanced control.
 - Keep controller input handling in ProtoFlux so the anchor remains usable
   without the UI.
+
+## Related patterns
+
+- Orientation gizmo: `notes/resonite/patterns/orientation-gizmo.md`

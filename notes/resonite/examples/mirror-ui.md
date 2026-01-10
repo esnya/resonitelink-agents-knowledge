@@ -45,3 +45,7 @@ Slot names are recorded only for navigation; the reusable patterns are in compon
 
 - No explicit mirror or camera component appeared in the captured depth.
   The mirror surface may be referenced from another slot or a deeper hierarchy.
+
+## Related patterns
+
+- UI toggle panel: `notes/resonite/patterns/ui-toggle-panel.md`

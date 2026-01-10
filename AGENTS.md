@@ -35,6 +35,14 @@ This repository stores a structured knowledge base for ResoniteLink and Resonite
 - Do not use trailing whitespace.
 - Prefer short paragraphs and consistent list formatting.
 
+## Knowledge maintenance
+
+- Periodically refactor the knowledge base when new material accumulates:
+  - Extract shared patterns into dedicated files.
+  - Split oversized or multi-topic notes into smaller units.
+  - Move content to a better-fitting category when it improves discoverability.
+  - Refresh indexes and entry points so users can find content from vague requests.
+
 ## Naming
 
 - Use kebab-case filenames (e.g., `render-to-texture.md`).

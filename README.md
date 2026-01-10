@@ -4,7 +4,7 @@ This directory is a local scratchpad for experimenting with **ResoniteLink** (We
 
 ## Endpoint
 - `ws://kokoa-resolink.neos.love/`
-- Optional relay/proxy: `experiments/resonitelink/notes/WS_PROXY.md`
+- Optional relay/proxy: `notes/resonitelink/ws-proxy.md`
 
 ## Upstream source of truth
 - Repository: `experiments/resonitelink/_upstream/ResoniteLink`
@@ -13,14 +13,12 @@ This directory is a local scratchpad for experimenting with **ResoniteLink** (We
 If something here disagrees with upstream models/docs, treat upstream as correct.
 
 ## Layout
-- `experiments/resonitelink/notes/PROTOCOL.md`: protocol notes + message shapes
-- `experiments/resonitelink/notes/AGENT_KNOWLEDGE.md`: Resonite-specific agent guidance
-- `experiments/resonitelink/notes/WS_PROXY.md`: relay/proxy notes (wsproxy.kokoa.dev)
-- `experiments/resonitelink/notes/RESO_SOURCES.md`: trusted external info sources
-- `experiments/resonitelink/notes/RGB_CUBE_TUTORIAL.md`: RGB Cube tutorial experiment notes
-- `experiments/resonitelink/samples/*.json`: copy/paste JSON examples
-- `experiments/resonitelink/samples/button_interactions/*.json`: button interaction sample set
-- `experiments/resonitelink/_upstream/ResoniteLink`: cloned upstream reference
+- `notes/INDEX.md`: knowledge index (ResoniteLink + Resonite categories)
+- `notes/resonitelink/INDEX.md`: ResoniteLink-specific docs
+- `notes/resonite/INDEX.md`: Resonite-specific docs
+- `samples/*.json`: copy/paste JSON examples
+- `samples/button_interactions/*.json`: button interaction sample set
+- `_upstream/ResoniteLink`: cloned upstream reference
 
 ## Related local Resonite assemblies
 - The local Resonite assemblies appear to be under `Resonite/` (e.g. many `.dll` files).

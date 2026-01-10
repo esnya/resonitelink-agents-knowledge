@@ -3,7 +3,7 @@
 This catalog is built from UIX template inspection in the current session. It records **what the asset is used for** and the **typical component settings** observed alongside the URL. It is not a complete official list.
 
 For the full official name → URL mapping extracted from FrooxEngine, see:
-- `experiments/resonitelink/notes/OFFICIAL_ASSETS_CATALOG.tsv`
+- `notes/resonite/assets/official-assets.tsv`
 
 ## Panel textures (9-slice)
 ### Panel background texture

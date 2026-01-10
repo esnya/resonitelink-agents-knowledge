@@ -7,6 +7,15 @@
 - Title layout: `HorizontalLayout` with spacers, text area, close button area.
 - Main area: `LayoutElement`.
 - Color palette + multiple `ValueCopy<colorX>` drivers.
+- Title layout details (observed in template):
+  - `HorizontalLayout` spacing `8`, padding `Top: 8`, `Bottom: 4`, `Left/Right: 8`, align `Center/Top`.
+  - Header `LayoutElement` min height `48`, flexible width `1`.
+  - Title text content `Panel Base`, size `64`, auto-size `0..40`, line height `1`.
+- Background mask details:
+  - Front image uses sprite `Reso_2B48A`, tint ~ `(0.0667, 0.0824, 0.1137, 1 sRGB)`, `NineSliceSizing: FixedSize`.
+  - Backing uses the same sprite, plus a panel icon slot anchored to `0.4..0.6` in both axes.
+- Template library under `Panel Base/Canvas/Templates` is documented separately:
+  - `notes/resonite/uix/patterns/panel-base-templates.md`.
 
 ## TextDisplay / NoticeDisplay
 

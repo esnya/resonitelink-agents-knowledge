@@ -35,6 +35,7 @@
 - Root: `ValueField<bool>`, color palette + drives, `Canvas` with `OverlappingLayout`.
 - Scroll element: `Image` + `OverlappingLayout`.
 - Mask child: `RectTransform` + `Mask` + `Image`.
+- Detailed scroll variants (official + templates): `notes/resonite/uix/patterns/scroll-areas.md`.
 
 ## Slider (horizontal/vertical, bar/fader)
 

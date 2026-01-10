@@ -20,6 +20,30 @@ For the full official name → URL mapping extracted from FrooxEngine, see:
 - `SpriteProvider` (typical): `Borders: (0.5,0.5,0.5,0.5)`, `FixedSize: 48/64/80`, `Scale: 1`.
 - Notes: Usually paired with two layers (`Background`/`Background mask` + `Backing`) and two materials (front-sided + back-sided) to render a backplate.
 
+### Panel Base template sprite (general UI blocks)
+
+- URL: `resdb:///3ee5c0335455c19970d877e2b80f7869539df43fccb8fc64b38e320fc44c154f.png`
+- What it is: 9-slice texture used by Panel Base templates (background mask, buttons, sliders).
+- Seen in: Panel Base (`Background mask`, `Backing`), template buttons/checkboxes/sliders.
+- `SpriteProvider` (observed): `Borders: (0.5,0.5,0.5,0.5)`, `FixedSize: 16`, `Scale: 1`.
+- `UIX.Image` (typical): `PreserveAspect: true`, `NineSliceSizing: FixedSize`, tint varies by control.
+
+### Panel Base text field sprite
+
+- URL: `resdb:///4cf46cd5ed44a69b35a62c1da231c44e10889bcf12d96f150e0688a5d8436feb.png`
+- What it is: 9-slice texture used for text field input backgrounds in Panel Base templates.
+- Seen in: TextField / FloatField / IntField / SlotField input backgrounds.
+- `SpriteProvider` (observed): `Borders: (0.5,0.5,0.5,0.5)`, `FixedSize: 16`, `Scale: 1`.
+- `UIX.Image` (typical): `PreserveAspect: true`, `NineSliceSizing: FixedSize`, tint ~ `(0.1686, 0.1843, 0.2078, 1 sRGB)`.
+
+## Fonts
+
+### Panel Base font chain (main font)
+
+- URL: `resdb:///fcff04f4bec2b3636f05ed894dc1f9a752c4cb587ee49857ec7a82abaf6ca016.ttf`
+- Seen in: Panel Base template labels (TextField / FloatField / IntField / SlotField / ToggleField).
+- Notes: Provided via a `FontChain` with multiple fallback fonts.
+
 ## Inspector / NodeBrowser base 9-slice
 
 ### Inspector/NodeBrowser main 9-slice

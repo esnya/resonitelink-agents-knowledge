@@ -7,6 +7,20 @@
 - `UIX.Image`: `PreserveAspect: true`, `NineSliceSizing: FixedSize`, `Tint` set per panel.
 - `SpriteProvider`: `Borders: (0.5,0.5,0.5,0.5)`, `FixedSize: 48/64/80`, `Scale: 1`.
 
+## Panel Base template sprite (FixedSize 16)
+
+- URL: `resdb:///3ee5c0335455c19970d877e2b80f7869539df43fccb8fc64b38e320fc44c154f.png`
+- Seen in: Panel Base `Background mask`/`Backing`, buttons, checkboxes, sliders.
+- `UIX.Image`: `PreserveAspect: true`, `NineSliceSizing: FixedSize`.
+- `SpriteProvider`: `Borders: (0.5,0.5,0.5,0.5)`, `FixedSize: 16`, `Scale: 1`.
+
+## Panel Base text field sprite (FixedSize 16)
+
+- URL: `resdb:///4cf46cd5ed44a69b35a62c1da231c44e10889bcf12d96f150e0688a5d8436feb.png`
+- Seen in: TextField / FloatField / IntField / SlotField input backgrounds.
+- `UIX.Image`: `PreserveAspect: true`, `NineSliceSizing: FixedSize`, `Tint` ~ `(0.1686, 0.1843, 0.2078, 1 sRGB)`.
+- `SpriteProvider`: `Borders: (0.5,0.5,0.5,0.5)`, `FixedSize: 16`, `Scale: 1`.
+
 ## Inspector / NodeBrowser 9-slice base
 
 - URL: `resdb:///cb6bd15c284f070b02dd72f02a790e1c58b3e12c2af229cc7c9323b7320739e4.png`

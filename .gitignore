@@ -3,6 +3,7 @@ ignored/
 
 # Build artifacts
 /tools/froox-introspect/obj/
+/tools/froox-introspect/bin/
 
 # Local state files
 /tools/resolink-console/state.json

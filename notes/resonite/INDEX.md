@@ -1,5 +1,9 @@
 # Resonite Index
 
+## Getting Started
+
+- Getting Started guide: `notes/resonite/getting-started.md`
+
 ## Sources
 
 - Trusted sources: `notes/resonite/sources.md`

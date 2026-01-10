@@ -27,14 +27,14 @@ For each common beginner scenario:
 ### Scenario 3: Play sound effect
 
 - Goal: Load and play audio
-- Path: INDEX → Resonite → Tutorials → audio-playback.md
-- Result: ✅ Found (Easy) - added in this validation
+- Path: INDEX → Resonite → Tutorials
+- Result: ❌ Missing - needs verified tutorial (scaffold added)
 
 ### Scenario 4: Display world text
 
 - Goal: 3D text in space
-- Path: INDEX → Resonite → Tutorials → world-text.md
-- Result: ✅ Found (Easy) - added in this validation
+- Path: INDEX → Resonite → Tutorials
+- Result: ❌ Missing - needs verified tutorial (scaffold added)
 
 ### Scenario 5: Import 3D model
 
@@ -51,8 +51,8 @@ For each common beginner scenario:
 ### Scenario 7: Follow user
 
 - Goal: Object follows player
-- Path: INDEX → Resonite → Tutorials → user-tracking.md
-- Result: ✅ Found (Easy) - added in this validation
+- Path: INDEX → Resonite → Tutorials
+- Result: ❌ Missing - needs verified tutorial (scaffold added)
 
 ### Scenario 8: Scrollable text
 
@@ -63,8 +63,8 @@ For each common beginner scenario:
 ### Scenario 9: Spawn on button click
 
 - Goal: Button creates new object
-- Path: INDEX → Resonite → Tutorials → object-spawning.md
-- Result: ✅ Found (Easy) - added in this validation
+- Path: INDEX → Resonite → Tutorials
+- Result: ❌ Missing - needs verified tutorial (scaffold added)
 
 ### Scenario 10: Teleport
 
@@ -74,13 +74,17 @@ For each common beginner scenario:
 
 ## Summary
 
-### Coverage: 8/10 scenarios (80%)
+### Coverage: 4/10 scenarios (40%)
 
-Added tutorials:
+Existing verified tutorials:
 
-- Getting started guide
+- RGB cube (3D object creation)
+- UIX tutorial (button UI and scrollable text)
+
+Missing tutorials (scaffolds created):
+
+- Audio playback
 - World-space text display
-- Audio playback basics
 - Object spawning patterns
 - User tracking and following
 
@@ -89,13 +93,13 @@ Remaining gaps:
 - 3D model import workflow
 - Locomotion and teleportation
 
-### Navigation improvements
+### Actions taken
 
-- Added "Getting Started" section in Resonite INDEX
-- All new tutorials linked from tutorials INDEX
-- Cross-references between related topics
+- Created scaffolds for 4 missing tutorials
+- Scaffolds outline planned content structure
+- Content requires verification with actual Resonite implementation
 
 ## Conclusion
 
-Knowledge base now covers most common beginner scenarios. Remaining gaps require specialized documentation outside current scope.
+Knowledge base has 4 verified tutorials covering basic scenarios. 4 additional tutorials need implementation and verification. 2 advanced topics remain out of scope.
 

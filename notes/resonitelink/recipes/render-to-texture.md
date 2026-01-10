@@ -5,6 +5,7 @@ Goal: spawn a reusable object that captures a camera frame to a local asset URL 
 ## Required slots and components
 
 ### Capture root
+
 - Slot name: `CaptureCamera`.
 - Components:
   - `FrooxEngine.Camera` with `RenderTexture` bound to a `RenderTextureProvider`.
@@ -12,11 +13,13 @@ Goal: spawn a reusable object that captures a camera frame to a local asset URL 
   - `FrooxEngine.BoxCollider` (size `(1, 1, 0)` for a flat board).
 
 ### Render texture provider
+
 - Child slot: `RenderTextureProvider`.
 - Component: `FrooxEngine.RenderTextureProvider`.
 - Suggested size: `(512, 512)`, depth `24`.
 
 ### Preview screen (optional)
+
 - Child slot: `PreviewScreen`.
 - Components:
   - `FrooxEngine.QuadMesh`.
@@ -25,6 +28,7 @@ Goal: spawn a reusable object that captures a camera frame to a local asset URL 
 - Bind `UnlitMaterial.Texture` to the same `RenderTextureProvider`.
 
 ### ProtoFlux nodes
+
 - Parent slot: `ProtoFlux`.
 - Child slots:
   - `RenderToTextureAsset` → `FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Rendering.RenderToTextureAsset`
@@ -39,11 +43,13 @@ Goal: spawn a reusable object that captures a camera frame to a local asset URL 
   - `DataModelObjectFieldStore<Uri>` → store + store component (`+Store`)
 
 ## ComponentType prefix rules
+
 - `ValueInput<T>` and `ValueObjectInput<T>` require `[ProtoFluxBindings]` prefix.
 - `DataModelObjectFieldStore<Uri>` (node) uses `[ProtoFluxBindings]`.
 - `DataModelObjectFieldStore<Uri>+Store` requires `[ProtoFlux.Nodes.FrooxEngine]`.
 
 ## Wiring summary
+
 - `FireOnTrue.Condition` → `ValueInput<bool>.Value`.
 - `FireOnTrue.OnChanged` → `StartAsyncTask.TaskStart`.
 - `StartAsyncTask.TaskStart` → `RenderToTextureAsset`.
@@ -56,11 +62,13 @@ Goal: spawn a reusable object that captures a camera frame to a local asset URL 
 - `DataModelObjectFieldStore<Uri>+Store.Node` → `DataModelObjectFieldStore<Uri>`.
 
 ## Trigger and URL retrieval
+
 - Trigger capture by toggling `ValueInput<bool>.Value` from `false` to `true`.
 - Read output from `DataModelObjectFieldStore<Uri>+Store.Value`.
 - Local asset URL format: `local://<hash>/<filename>.PNG`.
 
 ## Pitfalls and fixes
+
 - Store duplication: `DataModelObjectFieldStore<Uri>+Store` can appear multiple times on the slot.
   - Keep exactly one store; remove extras.
   - Validate the remaining store’s `Node` points to the `DataModelObjectFieldStore<Uri>` node.

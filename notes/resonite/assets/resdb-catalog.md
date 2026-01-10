@@ -1,12 +1,17 @@
 # Resdb Asset Catalog (Observed)
 
-This catalog is built from UIX template inspection in the current session. It records **what the asset is used for** and the **typical component settings** observed alongside the URL. It is not a complete official list.
+This catalog is built from UIX template inspection in the current session.
+It records **what the asset is used for** and the **typical component settings** observed alongside the URL.
+It is not a complete official list.
 
 For the full official name → URL mapping extracted from FrooxEngine, see:
+
 - `notes/resonite/assets/official-assets.tsv`
 
 ## Panel textures (9-slice)
+
 ### Panel background texture
+
 - URL: `resdb:///cb7ba11c8a391d6c8b4b5c5122684888a6a719179996e88c954a49b6b031a845.png`
 - What it is: Standard UI panel background texture used for front and back faces.
 - Official asset name (source): `OfficialAssets.Common.Particles.Disc`
@@ -16,7 +21,9 @@ For the full official name → URL mapping extracted from FrooxEngine, see:
 - Notes: Usually paired with two layers (`Background`/`Background mask` + `Backing`) and two materials (front-sided + back-sided) to render a backplate.
 
 ## Inspector / NodeBrowser base 9-slice
+
 ### Inspector/NodeBrowser main 9-slice
+
 - URL: `resdb:///cb6bd15c284f070b02dd72f02a790e1c58b3e12c2af229cc7c9323b7320739e4.png`
 - What it is: Large 9-slice base used by Inspector and NodeBrowser in `Image` slots.
 - Official asset name (source): `OfficialAssets.Graphics.UI.Circle.Light_Border.Circle_Phi2`
@@ -25,14 +32,18 @@ For the full official name → URL mapping extracted from FrooxEngine, see:
 - `SpriteProvider` (typical): `Borders: (0.5,0.5,0.5,0.5)`, `FixedSize: ~80.33`, `Scale: 1`.
 
 ## Small icon textures (TextureSize)
+
 These appear as small icon sprites in Inspector/NodeBrowser `Image` slots. Meanings are inferred from **where** the icon is used (exact glyph should be verified visually if needed).
 
 Shared component settings:
+
 - `UIX.Image`: `PreserveAspect: true`, `NineSliceSizing: TextureSize`.
 - `SpriteProvider`: `Borders: (0,0,0,0)`, `FixedSize: 8`, `Scale: 1`.
 
 ### Header action button icons (Inspector + NodeBrowser)
+
 Used in the **header bar button icons** of Inspector and NodeBrowser (action buttons in the top header row).
+
 - `resdb:///e20ee64c91dcd4809d175a16418f9380f3c37c961d4db86368b7c78329b254db.png` → `OfficialAssets.Graphics.Icons.Inspector.Pin`
 - `resdb:///1f4e90f99d5bea0640c7e223549f9985a658c84e32dacca233b779d5a41cae49.png` → `OfficialAssets.Graphics.Icons.Inspector.Close` (also `OfficialAssets.Graphics.Icons.General.Cancel`)
 Slot path pattern (observed):
@@ -40,7 +51,9 @@ Slot path pattern (observed):
 - NodeBrowser: `Header / Horizontal Layout / Button / Image`
 
 ### Inspector split-panel header / row action icons
+
 Used in **Inspector split panel header buttons** and **component row action buttons** (inside the main content scroll area).
+
 - `resdb:///2ced9965ffa463f231551ce482ccca875d452e3596883876d42a4944e638e118.png` → `OfficialAssets.Graphics.Icons.Inspector.Destroy`
 - `resdb:///f6ebd9cbdc9f1998993625ab9932c0fcf098b3021c0b51af8d4eed25b6d12e91.png` → `OfficialAssets.Graphics.Icons.Inspector.DestroyPreservingAssets`
 - `resdb:///2d04e2e4ade14b0414d8190e55aba6380773394c6e6546e96d16fb7b74eb27ad.png` → `OfficialAssets.Graphics.Icons.Inspector.Duplicate`
@@ -54,6 +67,7 @@ Slot path pattern (observed):
 - Component row actions: `Content / Panel / Split / Image / Content / Content / Scroll Area / Content / ComponentRoot / Vertical Layout / Horizontal Layout / Button / Image`
 
 ## How to extend this catalog
+
 - When you add a new URL, record:
   - What UI it appears in and the slot name(s).
   - `UIX.Image` settings (PreserveAspect, NineSliceSizing, Tint).

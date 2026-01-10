@@ -3,11 +3,13 @@
 This note documents component fields and ResoniteLink observations for the **Common UI/Button Interactions** category.
 
 ## Scope and method
+
 - Sources: FrooxEngine assembly reflection (declared public fields) + ResoniteLink component instances.
 - Test harness (ResoniteLink): attached components to `KokoaUixButton_0_Button` and wired to `KokoaButtonLab_Targets` ValueFields.
 - Limitation: writing `UIX.Button.IsPressed` via ResoniteLink did **not** trigger any Button* components (ValueFields unchanged). Actual input press is required in-client.
 
 ## Setup (ResoniteLink lab)
+
 - Button slot used: `KokoaUixButton_0_Button` (existing UIX button).
 - Target slot: `KokoaButtonLab_Targets` under Root.
 - Target ValueFields (field IDs for `IField<T>` bindings):
@@ -19,6 +21,7 @@ This note documents component fields and ResoniteLink observations for the **Com
   - `ValueField<Uri>`: `KokoaButtonLab_ValueUri` → `Value` id `Reso_23D66`
 
 ## Binding notes (ResoniteLink)
+
 - For `SyncRef<IField<T>>` targets, use the **field id** of the target `ValueField<T>.Value` (not the component id).
 - Generic type resolution failures (ResoniteLink parser):
   - `ButtonReferenceSet<Slot>` / `ButtonReferenceCycle<Slot>` → failed to resolve.
@@ -29,6 +32,7 @@ This note documents component fields and ResoniteLink observations for the **Com
 ## Components (fields + intent)
 
 ### Common UI/Button Interactions
+
 - **ButtonActionTrigger**
   - Fields: `OnPressed`, `OnPressing`, `OnReleased` (`SyncDelegate<Action>`).
   - Intent: call action delegates for press states.
@@ -38,11 +42,14 @@ This note documents component fields and ResoniteLink observations for the **Com
   - Intent: destroy target (or object root if enabled) on press.
 
 - **ButtonDynamicImpulseTrigger**
-  - Fields: `Target` (`SyncRef<Slot>`), `ExcludeDisabled` (`bool`), event tag strings (`HoverEnterTag`, `HoverLeaveTag`, `HoverStayTag`, `PressedTag`, `PressingTag`, `ReleasedTag`).
+  - Fields: `Target` (`SyncRef<Slot>`), `ExcludeDisabled` (`bool`), event tag strings
+    (`HoverEnterTag`, `HoverLeaveTag`, `HoverStayTag`, `PressedTag`, `PressingTag`, `ReleasedTag`).
   - Intent: emit dynamic impulse events to target slot with string tags.
 
 - **ButtonDynamicImpulseTriggerWithReference<T>**
-  - Fields: `Target` (`SyncRef<Slot>`), `ExcludeDisabled` (`bool`), event data (`HoverEnterData`, `HoverLeaveData`, `HoverStayData`, `PressedData`, `PressingData`, `ReleasedData`) of type `EventData<T>`.
+  - Fields: `Target` (`SyncRef<Slot>`), `ExcludeDisabled` (`bool`), event data
+    (`HoverEnterData`, `HoverLeaveData`, `HoverStayData`, `PressedData`, `PressingData`, `ReleasedData`)
+    of type `EventData<T>`.
   - Intent: emit dynamic impulse events carrying reference data.
 
 - **ButtonDynamicImpulseTriggerWithValue<T>**
@@ -111,6 +118,7 @@ This note documents component fields and ResoniteLink observations for the **Com
   - Note: requires a `WorldLink` component/asset reference; not set via ResoniteLink in this session.
 
 ### Common UI/Button Interactions/Media
+
 - **ButtonAudioClipPlayer**
   - Fields: `PressedClips`, `ReleasedClips`, `HoverEnterClips`, `HoverLeaveClips` (`SyncList<ClipData>`).
   - Intent: play random audio clip sets on events.
@@ -128,6 +136,7 @@ This note documents component fields and ResoniteLink observations for the **Com
   - Intent: seek in a playable by dragging along axis.
 
 ### Common UI/Button Interactions/Specialized
+
 - **ButtonAudioDeviceSet**
   - Fields: `DeviceIndex` (`int`).
   - Intent: set audio device by index.
@@ -145,6 +154,7 @@ This note documents component fields and ResoniteLink observations for the **Com
   - Intent: update user profile icon; likely requires other linked user/profile data.
 
 ## Observations
+
 - ResoniteLink can attach most non-generic button interaction components to a UIX.Button slot.
 - Setting `UIX.Button.IsPressed` through ResoniteLink did **not** trigger any of the Button* components. This likely requires actual input events in the client.
 - Generic reference variants (`ButtonReferenceSet<T>`, `ButtonReferenceCycle<T>`) failed to resolve with `Slot`/`IWorldElement` in ResoniteLink. Create via in-world component picker if needed.

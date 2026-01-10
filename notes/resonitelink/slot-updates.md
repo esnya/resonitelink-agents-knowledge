@@ -1,9 +1,11 @@
 # Slot updates (ResoniteLink)
 
 ## UpdateSlot shape
+
 `updateSlot` expects slot fields at the top level of `data`, not inside `members`.
 
 Works:
+
 ```json
 {
   "$type": "updateSlot",
@@ -15,6 +17,7 @@ Works:
 ```
 
 Does not apply (returns success but no change):
+
 ```json
 {
   "$type": "updateSlot",

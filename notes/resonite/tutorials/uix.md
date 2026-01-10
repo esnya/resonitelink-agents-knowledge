@@ -3,12 +3,14 @@
 Source: official Resonite Wiki "UIX Tutorial" (Empty Canvas section).
 
 ## Status
+
 - Completed: empty canvas created, styled, and assigned UI Unlit material.
 - Completed: simple vertical layout added to canvas.
 - Completed: button section implemented on a separate canvas to avoid overlap.
 - Completed: scrollable text section implemented on a separate canvas to avoid overlap.
 
 ## What we executed via ResoniteLink
+
 - Created root-level slots (offset to avoid RGB cube overlap):
   - `KokoaUixTutorial_0` at (0.8, 1.2, 2.2), scale (0.001, 0.001, 0.001).
   - `KokoaUixTutorial_0_Material` at (1.1, 1.2, 2.2).
@@ -23,6 +25,7 @@ Source: official Resonite Wiki "UIX Tutorial" (Empty Canvas section).
 - Image Material bound to `KokoaUixTutorial_0_UIUnlit`.
 
 ## Simple vertical layout (UIX Tutorial)
+
 - Added layout container: `KokoaUixTutorial_0_Layout` (child of `KokoaUixTutorial_0`).
 - Components on layout:
   - `RectTransform` (`KokoaUixTutorial_0_Layout_RectTransform`)
@@ -32,6 +35,7 @@ Source: official Resonite Wiki "UIX Tutorial" (Empty Canvas section).
   - `KokoaUixTutorial_0_Element_0`..`2` with `RectTransform`, `Image`, `LayoutElement`.
 
 ## A button (UIX Tutorial)
+
 - Created new canvas to avoid overlap with previous layout:
   - `KokoaUixButton_0` at (1.4, 1.2, 2.2), scale (0.001, 0.001, 0.001)
   - `KokoaUixButton_0_Material` at (1.7, 1.2, 2.2)
@@ -46,6 +50,7 @@ Source: official Resonite Wiki "UIX Tutorial" (Empty Canvas section).
   - Child `KokoaUixButton_0_Button_Text` with `RectTransform` and `Text` component (`KokoaUixButton_0_Button_Text_Component`) content "Button".
 
 ## Scrollable text (UIX Tutorial)
+
 - Created new canvas to avoid overlap:
   - `KokoaUixScroll_0` at (2.0, 1.2, 2.2), scale (0.001, 0.001, 0.001)
   - `KokoaUixScroll_0_Material` at (2.3, 1.2, 2.2)

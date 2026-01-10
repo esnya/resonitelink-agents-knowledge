@@ -1,19 +1,23 @@
 # UIX sprite URLs (observed)
 
 ## Panel background 9-slice
+
 - URL: `resdb:///cb7ba11c8a391d6c8b4b5c5122684888a6a719179996e88c954a49b6b031a845.png`
 - Seen in: Panel base, TextDisplay, UrlDisplay, NoticeDisplay, VideoPlayer (Background/Backing).
 - `UIX.Image`: `PreserveAspect: true`, `NineSliceSizing: FixedSize`, `Tint` set per panel.
 - `SpriteProvider`: `Borders: (0.5,0.5,0.5,0.5)`, `FixedSize: 48/64/80`, `Scale: 1`.
 
 ## Inspector / NodeBrowser 9-slice base
+
 - URL: `resdb:///cb6bd15c284f070b02dd72f02a790e1c58b3e12c2af229cc7c9323b7320739e4.png`
 - Seen in: Inspector + NodeBrowser slots named `Image`.
 - `UIX.Image`: `PreserveAspect: true`, `NineSliceSizing: FixedSize`.
 - `SpriteProvider`: `Borders: (0.5,0.5,0.5,0.5)`, `FixedSize: ~80.33`, `Scale: 1`.
 
 ## Small icon sprites (TextureSize)
+
 Observed URLs in Inspector/NodeBrowser `Image` slots:
+
 - `resdb:///e20ee64c91dcd4809d175a16418f9380f3c37c961d4db86368b7c78329b254db.png`
 - `resdb:///1f4e90f99d5bea0640c7e223549f9985a658c84e32dacca233b779d5a41cae49.png`
 - `resdb:///2ced9965ffa463f231551ce482ccca875d452e3596883876d42a4944e638e118.png`
@@ -26,5 +30,6 @@ Observed URLs in Inspector/NodeBrowser `Image` slots:
 - `resdb:///712fdf655825c22a40fb2b689e373d95fc74e504d8ef7b1b3a8cd9fa42dcd2cc.png`
 
 Common settings:
+
 - `UIX.Image`: `PreserveAspect: true`, `NineSliceSizing: TextureSize`.
 - `SpriteProvider`: `Borders: (0,0,0,0)`, `FixedSize: 8`, `Scale: 1`.

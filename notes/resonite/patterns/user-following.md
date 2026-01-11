@@ -38,3 +38,4 @@ Minimal pattern for attaching an object to a user or user space.
   `LookAtUser`, and tracking controllers). Use the inspector to confirm
   the best fit for a given request.
 - For object semantics, see `notes/resonite/components/object-root.md`.
+- Related list: `notes/resonite/components/transform-drivers.md`.

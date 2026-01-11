@@ -36,3 +36,6 @@ Minimal pattern for playing a clip in 3D space.
 
 - Audio playback paths are diverse; many `IPlayable` or one-shot components are
   better suited depending on context. Use the inspector to browse options.
+- Related references:
+  - `notes/resonite/audio/playback-model.md`
+  - `notes/resonite/audio/components.md`

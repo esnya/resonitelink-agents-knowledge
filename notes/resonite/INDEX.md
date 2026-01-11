@@ -24,6 +24,10 @@
 
 - Components index: `notes/resonite/components/INDEX.md`
 
+## Audio
+
+- Audio index: `notes/resonite/audio/INDEX.md`
+
 ## Assets
 
 - Assets index: `notes/resonite/assets/INDEX.md`

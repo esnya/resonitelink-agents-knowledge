@@ -22,3 +22,5 @@ Notes on proxy-style components used for user-friendly reference assignment.
   the underlying asset behavior.
 - The proxy family includes additional variants; verify component names and
   behavior via inspector before relying on them in automation.
+- Exportable metadata is tracked separately (see
+  `notes/resonite/components/exportables.md`).

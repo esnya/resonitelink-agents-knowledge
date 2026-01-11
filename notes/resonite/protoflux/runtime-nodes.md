@@ -6,11 +6,11 @@
 
 ## Evaluation notes
 
-- `ProtoFlux.Driver<colorX>` created via ResoniteLink did not update targets in
-  this session.
-- This may be due to missing NodeGroup/runtime graph assembly or an incorrect
-  node type (unverified). Treat as a session-specific observation until a
-  Driver node is created in-world and inspected.
+- `ProtoFlux.Driver<T>` is a `FrooxEngine.ProtoFlux.Driver<T>` component with:
+  - `Source`: `SyncRef<INodeOutput<T>>`
+  - `Target`: `FieldDrive<T>`
+- If the source is not a valid `INodeOutput<T>` (for example, a node type mismatch
+  or missing runtime wiring), the driver will not propagate values.
 
 ## Practical workaround
 

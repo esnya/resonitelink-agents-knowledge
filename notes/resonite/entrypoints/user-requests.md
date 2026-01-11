@@ -17,6 +17,8 @@ Use this map when a request is vague and you need a starting trail.
   `notes/resonite/patterns/basic-3d-object.md`.
 - "Show text in-world" →
   `notes/resonite/patterns/text-renderer-facing.md`.
+- "Show agent status or progress text" →
+  `notes/resonite/patterns/status-text-renderer.md`.
 - "Play a sound in 3D space" →
   `notes/resonite/patterns/audio-playback.md`.
 - "Spawn objects from a template" →

@@ -63,9 +63,11 @@ Remove the slot by ID when done:
 
 Sample JSON: `samples/root_step3_removeSlot_cleanup.json`
 
-## TextRenderer as a status console
+## Status text renderer (ResoniteLink procedure)
 
-Treat an existing TextRenderer as a console by rewriting its `Text` each step.
+Concept and sizing guidance live in
+`notes/resonite/patterns/status-text-renderer.md`. This section covers the
+ResoniteLink procedure for updating a TextRenderer in place.
 
 Local helper:
 

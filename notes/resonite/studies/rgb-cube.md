@@ -73,7 +73,9 @@ Source: official Resonite Wiki "RGB Cube" tutorial.
   - Cast_color_To_colorX: `KokoaRgbBox_0_PF_ColorCast` (Input -> ColorHue)
   - Driver<colorX>: `KokoaRgbBox_0_PF_Driver_Color` (Source -> ColorCast, Target -> PBS AlbedoColor)
 - Observations:
-  - `ProtoFlux.Driver<colorX>` did not update PBS_Metallic.AlbedoColor (driver appears inactive without a built NodeGroup).
+- `ProtoFlux.Driver<colorX>` did not update `PBS_Metallic.AlbedoColor` in this
+  session. This may have been due to an incorrect driver setup or missing
+  runtime wiring; treat as an unverified observation.
   - When Driver was removed, manual updates to `PBS_Metallic.AlbedoColor` persisted again.
   - `ValueCopy<colorX>` Target binds to PBS color only when no other drive exists.
 

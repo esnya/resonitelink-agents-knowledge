@@ -37,3 +37,4 @@
 ## Text
 
 - Text renderer facing: `notes/resonite/patterns/text-renderer-facing.md`
+- Status text renderer: `notes/resonite/patterns/status-text-renderer.md`

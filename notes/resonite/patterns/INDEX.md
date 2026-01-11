@@ -4,6 +4,10 @@
 
 - Snapping pair (SnapTarget + Snapper): `notes/resonite/patterns/snapping-pair.md`
 
+## Basics
+
+- Basic 3D object (mesh + grabbable): `notes/resonite/patterns/basic-3d-object.md`
+
 ## Audio
 
 - Audio playback (spatial): `notes/resonite/patterns/audio-playback.md`
@@ -23,6 +27,7 @@
 
 ## UI
 
+- Basic UIX canvas: `notes/resonite/patterns/basic-uix-canvas.md`
 - Toggle panel with user overrides: `notes/resonite/patterns/ui-toggle-panel.md`
 
 ## Visual gizmos

@@ -3,6 +3,7 @@
 ## By user request
 
 - Task-based navigation: `notes/resonite/entrypoints/user-requests.md`
+- Beginner scenario coverage: `notes/resonite/entrypoints/beginner-scenarios.md`
 
 ## By system
 

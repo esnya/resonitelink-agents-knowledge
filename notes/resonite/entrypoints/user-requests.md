@@ -13,6 +13,8 @@ Use this map when a request is vague and you need a starting trail.
 
 ## Core content
 
+- "Make a basic 3D object (mesh + grab)" →
+  `notes/resonite/patterns/basic-3d-object.md`.
 - "Show text in-world" →
   `notes/resonite/patterns/text-renderer-facing.md`.
 - "Play a sound in 3D space" →
@@ -38,6 +40,9 @@ Use this map when a request is vague and you need a starting trail.
 
 ## UI and panels
 
+- "Create a basic UI canvas or panel" →
+  `notes/resonite/patterns/basic-uix-canvas.md`,
+  `notes/resonite/uix/recipes/tutorial-derived.md`.
 - "Create a panel with minimize toggle" →
   `notes/resonite/patterns/ui-toggle-panel.md`,
   `notes/resonite/examples/mirror-ui.md`.

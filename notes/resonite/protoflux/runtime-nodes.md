@@ -6,8 +6,11 @@
 
 ## Evaluation notes
 
-- `ProtoFlux.Driver<colorX>` did not update targets in this session.
-- Nodes appear not evaluated without a built NodeGroup (Driver never propagated `ValueInput` changes).
+- `ProtoFlux.Driver<colorX>` created via ResoniteLink did not update targets in
+  this session.
+- This may be due to missing NodeGroup/runtime graph assembly or an incorrect
+  node type (unverified). Treat as a session-specific observation until a
+  Driver node is created in-world and inspected.
 
 ## Practical workaround
 

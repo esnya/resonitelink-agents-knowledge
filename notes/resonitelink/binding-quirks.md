@@ -10,5 +10,11 @@
 
 ## Drive exclusivity
 
-- A drive target cannot already be driven by another driver. Multiple drivers
+- A drive target cannot already be driven by another drive. Multiple drives
   competing for the same target are not supported.
+
+## Workaround (DynamicVariable relay)
+
+- You can multiplex by driving the same-named DynamicVariable in the same space
+  and then driving the target from that variable.
+- On conflicts, the last update wins and becomes the effective value.

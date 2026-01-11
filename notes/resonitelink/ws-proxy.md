@@ -2,6 +2,8 @@
 
 This document records the WebSocket relay proxy used by the Resonite Love Launcher for tunneling WebSocket traffic through a public relay.
 
+**Note:** The WebSocket relay is an experimental, user-created service. It is not part of ResoniteLink itself and exists to share a session-host-only ResoniteLink setup with remote clients.
+
 ## Endpoints
 
 - Relay WebSocket: `wss://wsproxy.kokoa.dev/ws`
@@ -39,7 +41,7 @@ All relay messages are JSON objects with a `type` field:
 ### Host flow (bridge to ResoniteLink)
 
 1. Connect to the relay WebSocket.
-2. Send `create_tunnel` with the target WS URL (example: `ws://kokoa-resolink.neos.love/`).
+2. Send `create_tunnel` with the target WS URL (example: `ws://localhost:33333/`).
 3. Receive `tunnel_created` with an `access_key` to share with clients.
 4. When `client_connected` arrives, open a WS connection to the target.
 5. Forward Base64 `data` in both directions.

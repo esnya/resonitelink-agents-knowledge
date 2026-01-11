@@ -33,3 +33,7 @@ directly (example: `SkinnedMeshRenderer` blendshape names).
 - `updateComponent` should set fields through `members` for reliable updates.
 - Remove the temporary inspector slot once the data is captured to avoid
   leaving debug UI in the world.
+
+## Related
+
+- ComponentType syntax: `notes/resonitelink/component-type-syntax.md`

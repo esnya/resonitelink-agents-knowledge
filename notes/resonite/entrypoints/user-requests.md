@@ -49,3 +49,5 @@ Use this map when a request is vague and you need a starting trail.
 - "Capture a camera to texture for an agent" →
   `notes/resonitelink/recipes/render-to-texture.md`,
   `notes/resonite/protoflux/drive-node-structure.md`.
+- "Read data that ResoniteLink does not expose (e.g., blendshape names)" →
+  `notes/resonitelink/recipes/scene-inspector-hack.md`.

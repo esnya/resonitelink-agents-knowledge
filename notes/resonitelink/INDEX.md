@@ -16,6 +16,10 @@
 
 - Operations guide: `notes/resonitelink/ops-guide.md`
 
+## Entry points
+
+- Entry points index: `notes/resonitelink/entrypoints/INDEX.md`
+
 ## Recipes and templates
 
 - Recipes index: `notes/resonitelink/recipes/INDEX.md`

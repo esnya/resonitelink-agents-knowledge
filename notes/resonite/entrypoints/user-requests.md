@@ -11,12 +11,23 @@ Use this map when a request is vague and you need a starting trail.
   `notes/resonite/patterns/orientation-gizmo.md`,
   `notes/resonite/examples/avatar-anchor-template.md`.
 
+## Core content
+
+- "Show text in-world" →
+  `notes/resonite/patterns/text-renderer-billboard.md`.
+- "Play a sound in 3D space" →
+  `notes/resonite/patterns/audio-playback.md`.
+- "Spawn objects from a template" →
+  `notes/resonite/patterns/object-spawning.md`.
+
 ## Tracking and gaze
 
 - "Show where the user is looking" →
   `notes/resonite/examples/eye-tracking-samples.md`,
   `notes/resonite/patterns/eye-ray-visualization.md`,
   `notes/resonite/patterns/dynamic-variables.md`.
+- "Attach something to a user / follow the user" →
+  `notes/resonite/patterns/user-following.md`.
 
 ## Projectiles and effects
 

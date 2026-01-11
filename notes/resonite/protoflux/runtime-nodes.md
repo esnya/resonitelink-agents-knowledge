@@ -8,9 +8,18 @@
 
 - `ProtoFlux.Driver<T>` is a `FrooxEngine.ProtoFlux.Driver<T>` component with:
   - `Source`: `SyncRef<INodeOutput<T>>`
-  - `Target`: `FieldDrive<T>`
-- If the source is not a valid `INodeOutput<T>` (for example, a node type mismatch
-  or missing runtime wiring), the driver will not propagate values.
+  - `Target`: `IField<T>` reference
+- `ValueInput<T>` runtime node type:
+  - `FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput<T>`
+  - ResoniteLink componentType:
+    `[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput<T>`
+- In-world test (ResoniteLink):
+  - Added `ValueInput<colorX>` + `ProtoFlux.Driver<colorX>` + `ValueField<colorX>`.
+  - Wired `Driver.Source` → `ValueInput<colorX>` component id.
+  - Wired `Driver.Target` → `ValueField<colorX>.Value` field id.
+  - Updating `ValueInput.Value` did **not** propagate to the ValueField.
+  - Likely missing runtime graph assembly (NodeGroup) or required node wiring.
+    Treat as unresolved until a Driver node is created in-world and inspected.
 
 ## Practical workaround
 

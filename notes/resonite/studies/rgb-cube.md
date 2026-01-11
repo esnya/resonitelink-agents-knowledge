@@ -76,6 +76,8 @@ Source: official Resonite Wiki "RGB Cube" tutorial.
 - `ProtoFlux.Driver<colorX>` did not update `PBS_Metallic.AlbedoColor` in this
   session. This may have been due to an incorrect driver setup or missing
   runtime wiring; treat as an unverified observation.
+  - See `notes/resonite/protoflux/runtime-nodes.md` for the corrected driver
+    component wiring and the latest in-world test.
   - When Driver was removed, manual updates to `PBS_Metallic.AlbedoColor` persisted again.
   - `ValueCopy<colorX>` Target binds to PBS color only when no other drive exists.
 

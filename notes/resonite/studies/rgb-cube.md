@@ -1,4 +1,4 @@
-# RGB Cube tutorial experiment (local)
+# RGB Cube study (local)
 
 Source: official Resonite Wiki "RGB Cube" tutorial.
 

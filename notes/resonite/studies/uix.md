@@ -1,4 +1,4 @@
-# UIX tutorial experiment (local)
+# UIX study (local)
 
 Source: official Resonite Wiki "UIX Tutorial" (Empty Canvas section).
 

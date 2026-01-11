@@ -14,7 +14,7 @@ Use this map when a request is vague and you need a starting trail.
 ## Core content
 
 - "Show text in-world" →
-  `notes/resonite/patterns/text-renderer-billboard.md`.
+  `notes/resonite/patterns/text-renderer-facing.md`.
 - "Play a sound in 3D space" →
   `notes/resonite/patterns/audio-playback.md`.
 - "Spawn objects from a template" →

@@ -11,7 +11,7 @@
 ## Tracking and rays
 
 - Eye ray visualization: `notes/resonite/patterns/eye-ray-visualization.md`
-- User following (ObjectRoot): `notes/resonite/patterns/user-following.md`
+- User following: `notes/resonite/patterns/user-following.md`
 
 ## World data
 
@@ -31,4 +31,4 @@
 
 ## Text
 
-- Text renderer billboard: `notes/resonite/patterns/text-renderer-billboard.md`
+- Text renderer facing: `notes/resonite/patterns/text-renderer-facing.md`

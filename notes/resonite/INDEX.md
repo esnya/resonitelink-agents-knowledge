@@ -22,15 +22,15 @@
 
 ## Components
 
-- Button interactions: `notes/resonite/components/button-interactions.md`
+- Components index: `notes/resonite/components/INDEX.md`
 
 ## Assets
 
 - Assets index: `notes/resonite/assets/INDEX.md`
 
-## Tutorials
+## Studies
 
-- Tutorials index: `notes/resonite/tutorials/INDEX.md`
+- Studies index: `notes/resonite/studies/INDEX.md`
 
 ## Examples
 

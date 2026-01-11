@@ -7,6 +7,8 @@ This note documents component fields and ResoniteLink observations for the **Com
 - Sources: FrooxEngine assembly reflection (declared public fields) + ResoniteLink component instances.
 - Test harness (ResoniteLink): attached components to `KokoaUixButton_0_Button` and wired to `KokoaButtonLab_Targets` ValueFields.
 - Limitation: writing `UIX.Button.IsPressed` via ResoniteLink did **not** trigger any Button* components (ValueFields unchanged). Actual input press is required in-client.
+- Interaction terminology (Physical vs Remote) is summarized in
+  `notes/resonite/components/interaction-modes.md`.
 
 ## Setup (ResoniteLink lab)
 

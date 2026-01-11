@@ -22,6 +22,19 @@ Minimal pattern for duplicating and spawning slots.
   `Agent_SpawnTemplate` and `Agent_SpawnedBox` were created with
   `BoxMesh` + `MeshRenderer`.
 - ProtoFlux `DuplicateSlot` wiring still needs in-world verification.
+  - Attempts to add `DuplicateSlot` via ResoniteLink failed to resolve
+    component types:
+    - `[FrooxEngine]FrooxEngine.DuplicateSlot`
+    - `[ProtoFluxBindings]FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.DuplicateSlot`
+    - `[ProtoFluxBindings]FrooxEngine.ProtoFlux.CoreNodes.DuplicateSlot`
+    - `[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.DuplicateSlot`
+    - `[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Slots.DuplicateSlot`
+  - In-world node inspection showed the resolved type is
+    `FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.DuplicateSlot`.
+  - ResoniteLink can add it with:
+    - `[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.DuplicateSlot`
+  - Observed members: `Template` and `OverrideParent` accept
+    `INodeObjectOutput<Slot>` references; `Duplicate` is the trigger output.
 
 ## Notes
 

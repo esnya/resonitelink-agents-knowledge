@@ -8,7 +8,7 @@ Minimal pattern for attaching an object to a user or user space.
 
 ## Components
 
-- `CopyGlobalTransform` (verified) or `VirtualParent` (not yet verified) for
+- `CopyGlobalTransform` (verified) or `VirtualParent` (verified in-world) for
   following a target slot.
 - `ObjectRoot` only when you must parent into user space.
 
@@ -24,6 +24,12 @@ Minimal pattern for attaching an object to a user or user space.
   (`Source` set to the current user's head slot) and `TextRenderer`.
 - Slot position matched the user head's global transform and tracked in-world.
 - The slot was removed after verification.
+- Created `Agent_UserFollow_VP` with `VirtualParent`, setting `OverrideParent`
+  to the current user's head slot and `LocalPosition` to `(0, 0, 0.2)`.
+  Slot fields did not change via ResoniteLink reads, but the object visibly
+  followed the user in-world.
+- Set `_targetPos`, `_targetRot`, and `_targetScl` to the slot's own
+  `Position/Rotation/Scale` field IDs during the test.
 
 ## Notes
 

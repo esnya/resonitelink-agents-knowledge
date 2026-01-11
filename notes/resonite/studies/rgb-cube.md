@@ -79,7 +79,8 @@ Source: official Resonite Wiki "RGB Cube" tutorial.
   `FieldDriveBase<T>+Proxy`.
   - See `notes/resonite/protoflux/runtime-nodes.md` for the Driver node notes.
   - When Driver was removed, manual updates to `PBS_Metallic.AlbedoColor` persisted again.
-  - `ValueCopy<colorX>` Target binds to PBS color only when no other drive exists.
+  - `ValueCopy<colorX>` cannot target a field that is already driven (multiple
+    drives are not supported).
 
 ## Update: Workaround to drive color without ProtoFlux tool
 

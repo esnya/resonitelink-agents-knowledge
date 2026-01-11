@@ -40,3 +40,5 @@ Slot names are recorded only for navigation; the reusable patterns are in compon
 
 - Use dynamic variables when multiple instances of a system need to coexist.
 - Keep variable names in one place (constants or `GlobalValue<string>` nodes).
+- Multiple writers can target the same variable; the last update wins. This can
+  be used as a workaround when multiple drives must feed the same target field.

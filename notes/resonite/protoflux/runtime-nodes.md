@@ -6,20 +6,20 @@
 
 ## Evaluation notes
 
-- `ProtoFlux.Driver<T>` is a `FrooxEngine.ProtoFlux.Driver<T>` component with:
-  - `Source`: `SyncRef<INodeOutput<T>>`
-  - `Target`: `IField<T>` reference
+- `FrooxEngine.ProtoFlux.Driver<T>` exists as a component but is **not** the
+  same thing as the ProtoFlux "Driver" node created by the tool. Treat it as
+  an internal/unknown component until verified; do not use it as the Driver node.
 - `ValueInput<T>` runtime node type:
   - `FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput<T>`
   - ResoniteLink componentType:
     `[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ValueInput<T>`
-- In-world test (ResoniteLink):
-  - Added `ValueInput<colorX>` + `ProtoFlux.Driver<colorX>` + `ValueField<colorX>`.
-  - Wired `Driver.Source` → `ValueInput<colorX>` component id.
-  - Wired `Driver.Target` → `ValueField<colorX>.Value` field id.
-  - Updating `ValueInput.Value` did **not** propagate to the ValueField.
-  - Likely missing runtime graph assembly (NodeGroup) or required node wiring.
-    Treat as unresolved until a Driver node is created in-world and inspected.
+
+## Driver node (tool-created)
+
+- The ProtoFlux "Driver" behavior observed in the RGB Cube uses:
+  - `ValueFieldDrive<T>` (CoreNodes)
+  - `FieldDriveBase<T>+Proxy`
+- See `notes/resonite/studies/rgb-cube.md` for the verified wiring.
 
 ## Practical workaround
 

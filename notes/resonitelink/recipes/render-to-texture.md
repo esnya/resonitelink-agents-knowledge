@@ -70,6 +70,7 @@ Goal: spawn a reusable object that captures a camera frame to a local asset URL 
 ## Pitfalls and fixes
 
 - Store duplication: `DataModelObjectFieldStore<Uri>+Store` can appear multiple times on the slot.
+  - The `+Store` component is auto-added with the node; avoid creating it twice.
   - Keep exactly one store; remove extras.
   - Validate the remaining store’s `Node` points to the `DataModelObjectFieldStore<Uri>` node.
 - RenderedAssetURL wiring: ResoniteLink does not accept `memberName` indirections for `ObjectWrite.Value`.

@@ -18,4 +18,6 @@ Minimal pattern for attaching an object to a user or user space.
 
 ## Verification
 
-- Needs in-world verification for tracking stability.
+- Created `Agent_UserFollow` parented under the current user slot with
+  `ObjectRoot` + `TextRenderer` via ResoniteLink.
+- Visual tracking needs in-world confirmation.

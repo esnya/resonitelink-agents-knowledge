@@ -18,4 +18,6 @@ Minimal pattern for playing a clip in 3D space.
 
 ## Verification
 
-- Needs in-world verification of attenuation and directionality.
+- Created `Agent_AudioPlayback` with `AudioClipPlayer` via ResoniteLink.
+- `Clip` set to the `User_Leave.wav` asset provider (`IAssetProvider<AudioClip>`).
+- Spatial settings were not configured in this pass.

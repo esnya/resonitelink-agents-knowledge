@@ -18,4 +18,7 @@ Minimal pattern for duplicating and spawning slots.
 
 ## Verification
 
-- Needs in-world verification of lifecycle and ownership.
+- Verified basic spawn flow by duplicating a template via ResoniteLink:
+  `Agent_SpawnTemplate` and `Agent_SpawnedBox` were created with
+  `BoxMesh` + `MeshRenderer`.
+- ProtoFlux `DuplicateSlot`/spawn pool wiring still needs in-world verification.

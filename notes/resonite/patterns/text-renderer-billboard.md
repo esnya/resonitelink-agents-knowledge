@@ -19,4 +19,5 @@ Minimal pattern for world-space text that faces the user.
 
 ## Verification
 
-- Needs in-world verification of readability and alignment.
+- Created `Agent_TextBillboard` with `TextRenderer` + `LookAtUser` via
+  ResoniteLink; `Text` and `Size` set successfully.

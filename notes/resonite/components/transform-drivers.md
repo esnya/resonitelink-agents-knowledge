@@ -1,7 +1,7 @@
 # Transform/Drivers Components
 
 Components registered under the `Transform/Drivers` category in FrooxEngine.
-Generic arity is rendered with `<T>` notation.
+List derived from local assembly scan; generic arity is rendered with `<T>` notation.
 
 ## User-following subset
 

@@ -35,6 +35,31 @@ These appear in both lists (provider + playback):
 - `FrooxEngine.MultiAudioClipPlayer`
 - `FrooxEngine.VideoTextureProvider`
 
+## Playback consumers (observed)
+
+- `FrooxEngine.AudioOutput` consumes `IWorldAudioDataSource` via `Source`.
+
+## Observed fields (ResoniteLink)
+
+- `AudioClipPlayer`
+  - `Clip`: `IAssetProvider<AudioClip>`
+- `MultiAudioClipPlayer`
+  - `Tracks`: list
+- `LerpingMultiClipPlayer`
+  - `Tracks`: list
+  - `Lerp`: float
+- `RandomAudioClipPlayer`
+  - `Clips`: list
+  - `ParentUnder`: `Slot`
+  - `MinDistance` / `MaxDistance`: nullable float
+  - `IgnoreAudioEffects`: bool
+- `AudioOutput`
+  - `Source`: `IWorldAudioDataSource`
+  - Spatialization fields: `SpatialBlend`, `Spatialize`,
+    `SpatializationStartDistance`, `SpatializationTransitionRange`
+  - Range/rolloff: `MinDistance`, `MaxDistance`, `RolloffMode`
+  - Other: `Volume`, `Pitch`, `AudioTypeGroup`, `DistanceSpace`
+
 ## Notes
 
 - Lists are derived from local FrooxEngine assemblies; verify in-world if
